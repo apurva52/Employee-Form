@@ -5,7 +5,7 @@
     <div>
       <div class="p-grid">
         <div class="p-col-12">
-          <h4 style="text-align: center;">
+          <h4 style="font-size: 23px;text-align: center;">
             Employee Details Form
           </h4>
         </div>
@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="p-col-12" style="text-align:center">
-          <button pButton label="Submit" title="Click Here To Save" lass="ui-button-rounded" icon="pi pi-check"
+          <button pButton label="Submit" title="Run Query" lass="ui-button-rounded" icon="pi pi-check"
             (click)="onSubmit(employeForm.value)" [disabled]="employeForm.invalid">
           </button>
         </div>
@@ -95,7 +95,7 @@
 </p-card>
 <br>
 <p-card *ngIf="finaldata.length > 0 " [style]="{width: 'width'}" styleClass="styleClass">
-  <h4 style="text-align: center;">
+  <h4 style="font-size: 23px;text-align: center;">
     Employee Table
   </h4>
   <p-table #dt [reorderableColumns]="true"
@@ -133,7 +133,7 @@
             <div>
               <div class="p-grid">
                 <div class="p-col-12">
-                  <h4 style="text-align: center;">
+                  <h4 style="font-size: 23px;text-align: center;">
                     Employee Details Form
                   </h4>
                 </div>
