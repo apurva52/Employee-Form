@@ -54,8 +54,8 @@
         <div class="p-grid p-col-12">
           <strong class="p-col-6">Permanent Address</strong>
           <div class="p-col-6">
-            <input type="text" style="width: 250px;" style="width: 506px;" formControlName="paddress" pInputText
-              placeholder="Please Enter Permanent Address">
+          <textarea type="text" style="width: 250px;" rows="3" autoResize="autoResize" style="width: 506px;"
+              formControlName="paddress" pInputTextarea placeholder="Please Enter Permanent Address"></textarea>
           </div>
         </div>
 
@@ -63,8 +63,8 @@
 
           <strong class="p-col-6">Temporary Address</strong>
           <div class="p-col-6">
-            <input type="text" style="width: 506px;" formControlName="aladdress" pInputText
-              placeholder="Please Enter Temporary  Address">
+             <textarea type="text" style="width: 506px;" rows="3" autoResize="autoResize" formControlName="aladdress"
+              pInputTextarea placeholder="Please Enter Temporary  Address"></textarea>
 
           </div>
         </div>
@@ -183,9 +183,9 @@
                 <div class="p-grid p-col-12">
                   <strong class="p-col-6">Permanent Address</strong>
                   <div class="p-col-6">
-                    <input type="text" style="width: 250px;" (keyup)="updatechangeCheckBox($event)"
-                      style="width: 506px;" formControlName="updatepaddress" pInputText
-                      placeholder="Please Enter Permanent Address">
+                   <textarea type="text" style="width: 250px;" rows="3" autoResize="autoResize"
+                      (keyup)="updatechangeCheckBox($event)" style="width: 506px;" formControlName="updatepaddress"
+                      pInputTextarea placeholder="Please Enter Permanent Address"></textarea>
                   </div>
                 </div>
 
@@ -193,8 +193,9 @@
 
                   <strong class="p-col-6">Temporary Address</strong>
                   <div class="p-col-6">
-                    <input type="text" style="width: 506px;" (keyup)="updatechangeCheckBox($event)"
-                      formControlName="updatealaddress" pInputText placeholder="Please Enter Temporary  Address">
+                   <textarea type="text" style="width: 506px;" rows="3" autoResize="autoResize"
+                      (keyup)="updatechangeCheckBox($event)" formControlName="updatealaddress" pInputTextarea
+                      placeholder="Please Enter Temporary  Address"></textarea>
 
                   </div>
                 </div>
