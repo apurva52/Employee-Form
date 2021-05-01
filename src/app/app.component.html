@@ -1,8 +1,9 @@
 <!-- Header section Starts-->
+<p-toolbar>
 <p-card>
   <form [formGroup]="employeForm">
     <!-- form 1 -->
-    <div>
+    <div style="padding: 0px 277px;">
       <div class="p-grid">
         <div class="p-col-12">
           <h4 class="header-style">
@@ -93,6 +94,7 @@
     </div>
   </form>
 </p-card>
+  </p-toolbar>
 <br>
 <p-card *ngIf="finaldata.length > 0 " [style]="{width: 'width'}" styleClass="styleClass">
    <h4 class="header-style">
@@ -130,7 +132,7 @@
         <div style="width: 571%;">
           <form [formGroup]="updateemployeForm">
             <!-- form 1 -->
-            <div>
+            <div style="padding: 0px 277px;">
               <div class="p-grid">
                 <div class="p-col-12">
                    <h4 class="header-style">
