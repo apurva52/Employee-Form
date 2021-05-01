@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="p-grid p-col-12">
-          <strong class="p-col-6">Address</strong>
+          <strong class="p-col-6">Permanent Address</strong>
           <div class="p-col-6">
             <input type="text" style="width: 250px;" style="width: 506px;" formControlName="paddress" pInputText
               placeholder="Please Enter Permanent Address">
@@ -69,7 +69,7 @@
           </div>
         </div>
         <div class="p-col-6" style="padding: 18px;">
-          <p-checkbox formControlName="aldcontrol" [binary]="true" label="Same as Temporary Address"
+          <p-checkbox formControlName="aldcontrol" [binary]="true" label="Same as Permanent Address"
             (onChange)="changeCheckBox($event,'add')"></p-checkbox>
         </div>
         <div class="p-grid p-col-12">
@@ -181,7 +181,7 @@
                   </div>
                 </div>
                 <div class="p-grid p-col-12">
-                  <strong class="p-col-6">Address</strong>
+                  <strong class="p-col-6">Permanent Address</strong>
                   <div class="p-col-6">
                     <input type="text" style="width: 250px;" (keyup)="updatechangeCheckBox($event)"
                       style="width: 506px;" formControlName="updatepaddress" pInputText
@@ -199,7 +199,7 @@
                   </div>
                 </div>
                 <div class="p-col-6" style="padding: 18px;">
-                  <p-checkbox formControlName="updatealdcontrol" [binary]="true" label="Same as Temporary Address"
+                  <p-checkbox formControlName="updatealdcontrol" [binary]="true" label="Same as Permanent  Address"
                     (onChange)="changeCheckBox($event,'update')"></p-checkbox>
                 </div>
                 <div class="p-grid p-col-12">
