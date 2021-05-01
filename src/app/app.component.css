@@ -6,3 +6,7 @@
     overflow-x: scroll;
 }
 
+:host>>>.p-card{
+    border-style: solid;
+}
+
