@@ -41,8 +41,6 @@ export class AppComponent implements OnInit {
   }
   setForm() {
     this.submitted = false;
-
-    // this.feedbackForm.get('lastTime').patchValue('1 hour');
     this.employeForm = this.fb.group({
       firstname: [{ value: null, disabled: false }, [Validators.required, Validators.maxLength(20), Validators.minLength(3)]],
       lastname: [{ value: null, disabled: false }, [Validators.required, Validators.maxLength(20), Validators.minLength(3)]],
