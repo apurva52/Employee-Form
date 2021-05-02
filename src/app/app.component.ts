@@ -1,16 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
-import { OverlayPanel } from 'primeng-lts/overlaypanel';
 import { MessageService } from 'primeng-lts/api';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { ConfirmationService } from 'primeng-lts/api'
 
-
-interface Error {
-  main: string;
-  userid: string;
-  password: string;
-}
 
 
 @Component({
@@ -36,7 +28,7 @@ export class AppComponent implements OnInit {
   ];
   submitted: boolean;
 
-  constructor(private route: Router, private confirmationService: ConfirmationService, private fb: FormBuilder, private messageService: MessageService) { }
+  constructor(private confirmationService: ConfirmationService, private fb: FormBuilder, private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.designationoption = [
@@ -92,7 +84,7 @@ export class AppComponent implements OnInit {
 
     this.totalRecords = this.finaldata.length;
     this.storeData(JSON.stringify(this.emplyedetails));
-     this.messageService.clear();
+    this.messageService.clear();
     this.messageService.add({ severity: 'success', summary: 'Submitted Successfully', detail: '' });
     this.getData();
 
@@ -121,7 +113,7 @@ export class AppComponent implements OnInit {
             this.storeData(JSON.stringify(this.finaldata));
             this.getData();
             this.messageService.clear();
-        this.messageService.add({ severity: 'success', summary: 'Deleted Successfully', detail: '' });
+            this.messageService.add({ severity: 'success', summary: 'Deleted Successfully', detail: '' });
           }
         });
       }
