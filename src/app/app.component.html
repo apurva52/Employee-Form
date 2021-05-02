@@ -12,8 +12,8 @@
         </div>
         <div class="p-grid p-col-12">
           <strong class="p-col-6">
-            First name
              <font style="color: red;">*</font>
+            First name       
           </strong>
           <div class="p-col-6">
             <input type="text" formControlName="firstname" style="width: 353px;" pInputText
@@ -22,8 +22,9 @@
 
         </div>
         <div class="p-grid p-col-12">
-          <strong class="p-col-6">Last Name
-           <font style="color: red;">*</font>
+          <strong class="p-col-6">
+             <font style="color: red;">*</font>
+            Last Name
           </strong>
           <div class="p-col-6">
             <input type="text" formControlName="lastname" style="width: 353px;" pInputText
@@ -31,8 +32,9 @@
           </div>
         </div>
         <div class="p-grid p-col-12">
-          <strong class="p-col-6">Conatact Number
-           <font style="color: red;">*</font>
+          <strong class="p-col-6">
+             <font style="color: red;">*</font>
+            Conatact Number
           </strong>
           <div class="p-col-6">
             <input type="text" style="width: 250px;" formControlName="contactnumber" pInputText
@@ -52,8 +54,9 @@
         </div>
 
         <div class="p-grid p-col-12">
-          <strong class="p-col-6">Email
-           <font style="color: red;">*</font>
+          <strong class="p-col-6">
+             <font style="color: red;">*</font>
+            Email
           </strong>
           <div class="p-col-6">
             <input type="email" style="width: 250px;" formControlName="emailcontrol" pInputText
@@ -61,8 +64,9 @@
           </div>
         </div>
         <div class="p-grid p-col-12">
-          <strong class="p-col-6">Permanent Address
-           <font style="color: red;">*</font>
+          <strong class="p-col-6">
+             <font style="color: red;">*</font>
+            Permanent Address
           </strong>
           <div class="p-col-6">
           <textarea type="text" style="width: 250px;" rows="3" autoResize="autoResize" style="width: 506px;"
@@ -72,8 +76,9 @@
 
         <div class="p-grid p-col-12">
 
-          <strong class="p-col-6">Temporary Address
-            <font *ngIf="employeForm.get('aldcontrol').value == false" style="color: red;">*</font>
+          <strong class="p-col-6">
+             <font *ngIf="employeForm.get('aldcontrol').value == false" style="color: red;">*</font>
+            Temporary Address
           </strong>
           <div class="p-col-6">
              <textarea type="text" style="width: 506px;" rows="3" autoResize="autoResize" formControlName="aladdress"
@@ -86,8 +91,9 @@
             (onChange)="changeCheckBox($event,'add')"></p-checkbox>
         </div>
         <div class="p-grid p-col-12">
-          <strong class="p-col-6">Designation
-           <font style="color: red;">*</font>
+          <strong class="p-col-6">
+               <font style="color: red;">*</font>
+            Designation
           </strong>
           <div class="p-col-6">
             <p-dropdown appendTo="body" [options]="designationoption" placeholder="Please Select Designation"
@@ -156,8 +162,8 @@
                 </div>
                 <div class="p-grid p-col-12">
                   <strong class="p-col-6">
-                    First name
-                     <font style="color: red;">*</font>
+                       <font style="color: red;">*</font>
+                    First name 
                   </strong>
                   <div class="p-col-6">
                     <input type="text" (keyup)="updatechangeCheckBox($event)" formControlName="updatefirstname"
@@ -166,8 +172,9 @@
 
                 </div>
                 <div class="p-grid p-col-12">
-                  <strong class="p-col-6">Last Name
-                   <font style="color: red;">*</font>
+                  <strong class="p-col-6">
+                       <font style="color: red;">*</font>
+                    Last Name
                   </strong>
                   <div class="p-col-6">
                     <input type="text" (onChange)="updatechangeCheckBox($event)" formControlName="updatelastname"
@@ -175,8 +182,9 @@
                   </div>
                 </div>
                 <div class="p-grid p-col-12">
-                  <strong class="p-col-6">Conatact Number
-                     <font style="color: red;">*</font>
+                  <strong class="p-col-6">
+                       <font style="color: red;">*</font>
+                    Conatact Number
                   </strong>
                   <div class="p-col-6">
                     <input type="number" style="width: 250px;" (keyup)="updatechangeCheckBox($event)"
@@ -196,8 +204,9 @@
                 </div>
 
                 <div class="p-grid p-col-12">
-                  <strong class="p-col-6">Email
-                   <font style="color: red;">*</font>
+                  <strong class="p-col-6">
+                      <font style="color: red;">*</font>
+                    Email
                   </strong>
                   <div class="p-col-6">
                     <input type="email" style="width: 250px;" (keyup)="updatechangeCheckBox($event)"
@@ -205,8 +214,9 @@
                   </div>
                 </div>
                 <div class="p-grid p-col-12">
-                  <strong class="p-col-6">Permanent Address
-                   <font style="color: red;">*</font>
+                  <strong class="p-col-6">
+                       <font style="color: red;">*</font>
+                    Permanent Address
                   </strong>
                   <div class="p-col-6">
                    <textarea type="text" style="width: 250px;" rows="3" autoResize="autoResize"
@@ -217,8 +227,9 @@
 
                 <div class="p-grid p-col-12">
 
-                  <strong class="p-col-6">Temporary Address
-                  <font *ngIf="updateemployeForm.get('updatealdcontrol').value == false" style="color: red;">*</font>
+                  <strong class="p-col-6">
+                      <font *ngIf="updateemployeForm.get('updatealdcontrol').value == false" style="color: red;">*</font>
+                    Temporary Address
                   </strong>
                   <div class="p-col-6">
                    <textarea type="text" style="width: 506px;" rows="3" autoResize="autoResize"
@@ -232,8 +243,9 @@
                     (onChange)="changeCheckBox($event,'update')"></p-checkbox>
                 </div>
                 <div class="p-grid p-col-12">
-                  <strong class="p-col-6">Designation
-                   <font style="color: red;">*</font>
+                  <strong class="p-col-6">
+                    <font style="color: red;">*</font>
+                    Designation
                   </strong>
                   <div class="p-col-6">
                     <p-dropdown appendTo="body" [options]="designationoption" (onChange)="updatechangeCheckBox($event)"
