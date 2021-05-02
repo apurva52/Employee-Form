@@ -110,6 +110,7 @@
 </p-card>
   </p-toolbar>
 <br>
+<p-toolbar>
 <p-card *ngIf="finaldata.length > 0 " [style]="{width: 'width'}" styleClass="styleClass">
    <h4 class="header-style">
     Employee Table
@@ -276,6 +277,7 @@
     </ng-template>
   </p-table>
 </p-card>
+  </p-toolbar>
 <p-toast [baseZIndex]="500000"></p-toast>
 
 <p-confirmDialog header="Confirmation" [baseZIndex]="10000" icon="pi pi-exclamation-triangle"></p-confirmDialog>
