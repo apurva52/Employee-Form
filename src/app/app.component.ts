@@ -92,6 +92,8 @@ export class AppComponent implements OnInit {
 
     this.totalRecords = this.finaldata.length;
     this.storeData(JSON.stringify(this.emplyedetails));
+     this.messageService.clear();
+    this.messageService.add({ severity: 'success', summary: 'Submitted Successfully', detail: '' });
     this.getData();
 
   }
