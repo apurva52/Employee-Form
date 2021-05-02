@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
             this.storeData(JSON.stringify(this.finaldata));
             this.getData();
             this.messageService.clear();
-        this.messageService.add({ severity: 'success', summary: 'Updated Successfully', detail: '' });
+        this.messageService.add({ severity: 'success', summary: 'Deleted Successfully', detail: '' });
           }
         });
       }
